@@ -1,0 +1,73 @@
+.card {
+  /* Стилі для card */
+}
+
+.slider-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: var(--white-gray-clr);
+  outline: none;
+  opacity: 0.7;
+  height: 12px;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  .slider {
+    height: 15px;
+  }
+}
+
+.slider::-ms-fill-lower {
+  background: var(--crystal-waters-clr);
+}
+
+.slider::-ms-fill-upper {
+  background: var(--white-gray-clr);
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: var(--crystal-waters-clr);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 147px 240px -52px var(--white-gray-clr);
+}
+
+@media screen and (min-width: 600px) {
+  .slider::-webkit-slider-thumb {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: var(--white-gray-clr);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 147px 240px -52px var(--white-gray-clr);
+}
+
+@media screen and (max-width: 600px) {
+  .slider::-moz-range-thumb {
+    width: 50px;
+    height: 50px;
+  }
+}
